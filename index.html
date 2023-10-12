@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-4">
+            <div class="col-10 col-md-6">
+                <div class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bookmark-heart" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                      </svg>
+                    <h3 class="text-secondary">
+                        TODO List
+                    </h3>
+                </div>
+                <div>
+                    <form id="item-form" class="my-4">
+                        <div class="mb-3">
+                            <label for="item-input" class="form-label">Enter Item</label>
+                            <input type="text" class="form-control" id="item-input" />
+                            <div id="input-invalid" class="form-text text-danger"></div>
+                        </div>
+                        <button id="btn-add" e="submit" class="btn btn-sm btn-dark">
+                                <i class="bi bi-plus"></i>
+                                Add Item
+                         </button>
+                    </form>
+                    <div class="mb-3 mt-4">
+                        <input id="filter" class="form-control form-control-sm" type="text" placeholder="Filter Items" />
+                    </div>
+                    <div>
+                        <ul id="item-list" class="my-4 p-0">
+                            <!-- 
+                            <li class="list-item">
+                                An item
+                                <i class="bi bi-x fs-5 text-danger"></i>
+                            </li> -->
+                            <!-- 
+                            <li class="list-item">
+                                A second item
+                                <i class="bi bi-x fs-5 text-danger"></i>
+                            </li>
+
+                            <li class="list-item">
+                                A third item
+                                <i class="bi bi-x fs-5 text-danger"></i>
+                            </li>
+
+                            <li class="list-item">
+                                A fourth item
+                                <i class="bi bi-x fs-5 text-danger"></i>
+                            </li>
+
+                            <li class="list-item list-item">
+                                A fifth item
+                                <i class="bi bi-x fs-5 text-danger"></i>
+                            </li> -->
+
+                        </ul>
+                    </div>
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-outline-dark" id="bt-clear" style="width:640px">clear all</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js.js">
+    </script>
+</body>
+
+</html>
